@@ -170,6 +170,7 @@ int main(int argc, char *argv[]) {
   parameters->start_time_ = start_time;
   auto net_query_stats = td::create_net_query_stats();
   parameters->net_query_stats_ = net_query_stats;
+  parameters->allow_colon_in_filenames_ = false;
 
   td::OptionParser options;
   bool need_print_usage = false;
